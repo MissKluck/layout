@@ -1,5 +1,5 @@
 /* CSS Overrides */ 
-body {
+* {
   margin: 0px;
 }
 
@@ -21,6 +21,35 @@ body {
 .footer {
   background-color: coral;
   padding: 8px;
+}
+
+.mini-page {
+  background-color: aqua;
+  width: 100vw;
+
+  display: grid;
+  grid-template-areas: 
+  "nav nav"
+  "aside main"
+  "footer footer";
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+
+.mini-page > header {
+  grid-area: nav;
+}
+
+.mini-page > aside {
+  grid-area: aside;
+}
+
+.mini-page > main {
+  grid-area: main;
+}
+
+.mini-page > footer {
+  grid-area: footer;
 }
 
 /* 
