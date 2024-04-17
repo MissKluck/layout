@@ -1,6 +1,64 @@
+/* CSS Overrides */ 
+body {
+  margin: 0px;
+}
+
+/* Our styling */
+body {
+  height: 100vh;
+}
+
 .navbar {
   background-color: coral;
+  padding: 8px;
 
+}
+
+.navbar > nav {
+  background-color: aquamarine;
+}
+
+.footer {
+  background-color: coral;
+  padding: 8px;
+}
+
+/* 
+  Utility Classes 
+  Used to set classes in the document that you can refer back to, instead of having to set it for each element
+  */
+.flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
   justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gap-sm {
+  gap: 5px;
+}
+
+.gap-md {
+  gap: 10px;
+}
+
+.gap-lg {
+  gap: 15px;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }

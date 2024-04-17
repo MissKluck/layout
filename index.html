@@ -6,13 +6,15 @@
   <link rel="stylesheet" href="styles.css">
   <title>Document</title>
 </head>
-<body>
-  <header class="navbar">
+<body class="flex flex-column">
+  <header class="navbar flex justify-between items-center">
       <a href="">
         Logoplaceholder
       </a>
+      
+      <p> CSS Layouts </p>
 
-      <nav>
+      <nav class="flex gap-lg">
         <a href="">
           Home
         </a>
@@ -24,5 +26,21 @@
         </a>
       </nav>
   </header>
+
+  <main class="flex-grow flex flex-column items-center">
+    <section>
+      <h2> CSS Flexbox </h2>
+    </section>
+
+    <section>
+      <h2> CSS Grid </h2>
+    </section>
+  
+  </main>
+
+  <footer class="footer text-center">
+    <a href=""> Github </a>
+  </footer>
+
 </body>
 </html>
